@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Vidrios</title>
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- Librería EmailJS -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <form id="contact_form">
+      <h2>Solicitud de Vidrios</h2>
+      <p>Envía una cotización rápida a nuestro equipo</p>
+
+      <input
+        type="text"
+        id="user_name"
+        name="name"
+        placeholder="Tu Nombre"
+        required>
+
+      <input
+        type="email"
+        id="user_email"
+        name="email"
+        placeholder="Tu Correo"
+        required>
+
+      <select name="glass_type" id="glass_type">
+        <option value="templado">Vidrio Templado</option>
+        <option value="laminado">Vidrio Laminado</option>
+        <option value="espejo">Vidrio Espejo</option>
+        <option value="doble_cristalizado">Vidrio Doble Cristalizado</option>
+      </select>
+
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Detalles del pedido (medidas, espesor, cantidad...)"
+        required></textarea>
+
+      <button type="submit" id="button">Enviar Cotización</button>
+    </form>
+  </div>
+
+  <!-- Tu archivo JS -->
+  <script src="script.js"></script>
+</body>
+</html>
